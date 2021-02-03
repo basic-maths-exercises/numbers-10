@@ -11,6 +11,7 @@ except:
 import unittest
 from main import *
 
+import numpy as np
 import unittest
 from main import *
 
@@ -21,5 +22,5 @@ class UnitTests(unittest.TestCase) :
             a, b = np.random.randint(0,20), np.random.randint(0,20) 
             inputs.append((a,b,))
             if a-b>0 : outputs.append(1) 
-            else : ouptuts.append(0) 
+            else : outputs.append(0) 
         assert( fc.check_func( 'isInNaturals', inputs, outputs ) ) 
